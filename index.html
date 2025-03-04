@@ -12,9 +12,14 @@ html,body,h1,h2,h3,h4,h5,h6 {
     sans-serif
     background-color: black;
     color: white;
+    ul {
+      list-style-type: square;
+      margin: 0;
+      padding-left: 15px;
+    }
 };
 </style>
-<body class="w3-light-grey">
+<body class="w3-black">
 
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
@@ -25,7 +30,7 @@ html,body,h1,h2,h3,h4,h5,h6 {
     <!-- Left Column -->
     <div class="w3-third">
     
-      <div class="w3-white w3-text-grey w3-card-4">
+      <div class="w3-dark-grey w3-text-white w3-card-4">
         <div class="w3-display-container">
           <img src="/profile-pic.jpg" style="width:100%" alt="Avatar">
           <div class="w3-display-bottomleft w3-container w3-text-light-grey">
@@ -42,21 +47,21 @@ html,body,h1,h2,h3,h4,h5,h6 {
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-purple"></i>Skills</b></p>
           <p>Electrical Engineering</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-purple" style="width:90%">90%</div>
-          </div>
-          <p>Technical Communication</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-purple" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
-            </div>
+            <div class="w3-container w3-center w3-round-xlarge w3-purple" style="width:60%">60%</div>
           </div>
           <p>Linux + Programming</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-purple" style="width:75%">75%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-purple" style="width:60%">60%</div>
+          </div>
+          <p>Technical Communication</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-purple" style="width:40%">
+              <div class="w3-center w3-text-light-grey">40%</div>
+            </div>
           </div>
           <p>Microsoft Office</p>
           <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-purple" style="width:50%">50%</div>
+            <div class="w3-container w3-center w3-round-xlarge w3-purple" style="width:70%">70%</div>
           </div>
           <br>
 
@@ -67,7 +72,7 @@ html,body,h1,h2,h3,h4,h5,h6 {
           </div>
           <p>Finnish</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-purple" style="height:24px;width:5%"></div>
+            <div class="w3-round-xlarge w3-purple" style="height:24px;width:10%"></div>
           </div>
           <br>
         </div>
@@ -79,50 +84,88 @@ html,body,h1,h2,h3,h4,h5,h6 {
     <!-- Right Column -->
     <div class="w3-twothird">
     
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Work Experience</h2>
+      <div class="w3-container w3-card w3-dark-grey w3-margin-bottom">
+        <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Work Experience</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Research Assistant</b></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2023 - <span class="w3-tag w3-purple w3-round">Present</span></h6>
-          <p>Write and maintain project codebase, timeseries database, and IoT devices. Edge computing, IoT, smart meter protocols (IEC61850, DLMS-COSEM), power quality standards (IEC50160, IEC517). Raspberry Pi, Docker InfluxDB, Grafana, Linux, Python.</p>
+          <h6 class="w3-text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2023 - <span class="w3-tag w3-light-blue w3-round">Present</span></h6>
+          <p>
+              <ul>
+                  <li>Write and maintain project codebase, timeseries database, and IoT devices</li>
+                  <li>Edge computing, IoT, smart meter protocols (IEC61850, DLMS-COSEM), power quality standards (IEC50160, IEC517)</li>
+                  <li>Raspberry Pi, Docker InfluxDB, Grafana, Linux, Python</li>
+              </ul>
+          </p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Systems Engineer</b></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2022 - June 2023</h6>
-          <p>Rockwell and Siemens graphic interfaces and PLC programming. On-site experience in several industrial plants. Full project cycle experience.</p>
+          <h6 class="w3-text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2022 - June 2023</h6>
+          <p>
+              <ul>
+                  <li>Rockwell and Siemens graphic interfaces and PLC programming</li>
+                  <li>On-site experience in several industrial plants</li>
+                  <li>Full project cycle experience.</li>
+              </ul>
+          </p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Tutor Manager, part time</b></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2021 - May 2022</h6>
-          <p>Schedule tutors in multiple residence hall locations. Direct Communication with and management of multiple active staff members. Organization and presentation of instruction materials.</p><br>
+          <h6 class="w3-text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2021 - May 2022</h6>
+          <p>
+              <ul>
+                  <li>Schedule tutors in multiple residence hall locations</li>
+                  <li>Direct Communication with and management of multiple active staff members</li>
+                  <li>Organization and presentation of instruction materials</li>
+              </ul>
+          </p>
+        <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Teacher's Assistant</b></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2021 - August 2021</h6>
-          <p>Designed assignments and organized content for graduate courses. Novel feedback control systems, MATLAB programming, LaTEX.</p><br>
+          <h6 class="w3-text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2021 - August 2021</h6>
+          <p>
+          <ul>
+              <li>Designed assignments and organized content for graduate courses</li>
+              <li>Novel feedback control systems, MATLAB programming, LaTEX</li>
+          </ul>
+           </p><br>
         </div>
       </div>
 
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Education</h2>
+      <div class="w3-container w3-card w3-dark-grey">
+        <h2 class="w3-text-light-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-purple"></i>Education</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Masters of Engineering in Smart Grids</b></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023 - Present</h6>
-          <p>Master degree with focus on making power grids more reslient, self-healing, and renewable.</p>
+          <h6 class="w3-text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2023 - <span class="w3-tag w3-light-blue w3-round">Present</span></h6>
+          <p>
+          Master degree with focus on making power grids more reslient, self-healing, and renewable</p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Bachelor of Science in Engineering Physics and Applied Mathematics</b></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2022</h6>
-          <p>Control systems, digital logic, analog systems and circuits, microcontrollers. Complex analysis, scientific computing, tensor calculus. Intermediate mechanics, electricity and magnetism, quantum mechanics. Software and comoponents, C++, Python, Java.</p>
+          <h6 class="w3-text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2022</h6>
+          <p>
+          <ul>
+              <li>Control systems, digital logic, analog systems and circuits, microcontrollers</li>
+              <li>Complex analysis, scientific computing, tensor calculus</li>
+              <li>Intermediate mechanics, electricity and magnetism, quantum mechanics</li>
+              <li>Software and comoponents, C++, Python, Java</li>
+          </ul>
+             </p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Undergraduate Research</b></h5>
-          <h6 class="w3-text-purple"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2022 - 2023</h6>
-          <p>Si-based Resonant Interpand Tunneling Diodes. Silvaco semiconductor simulation software. Independent self-study on semiconductor physics.</p><br>
+          <h6 class="w3-text-light-blue"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2022 - 2023</h6>
+          <p>
+          <ul>
+              <li>Si-based Resonant Interband Tunneling Diodes</li>
+              <li>Silvaco semiconductor simulation software</li>
+              <li>Independent self-study on semiconductor physics</li>
+          </ul>
+            </p><br>
         </div>
       </div>
 
