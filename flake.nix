@@ -19,6 +19,7 @@
         default = pkgs.mkShell {
           packages = [
             pkgs.nodejs
+            pkgs.python3
 
             # Alternatively, you can use a specific major version of Node.js
 
@@ -42,6 +43,7 @@
 
             # pkgs.python3
           ];
+          NODE_PATH="./site/node_modules";
         };
       });
     };

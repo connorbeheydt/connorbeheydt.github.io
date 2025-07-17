@@ -1,8 +1,7 @@
-# Personal Website
-This is my personal website. It currently displays a basic resume. In the future I may have pages for personal projects.
+## Personal Website
+Making a personal website using a static site generator. It'll hold resume-like content as well as a maker blog.
 
-## TODO
-- [ ] Update headshot
-- [ ] Add htmx
-- [ ] Update CSS
-- [ ] Update resume content
+### TODO
+- [ ] Add SCSS compilation step
+- [X] Get live editing working
+- [ ] Move to personal website repo

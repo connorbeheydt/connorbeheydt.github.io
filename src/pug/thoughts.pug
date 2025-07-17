@@ -1,0 +1,21 @@
+//thoughts.pug
+include  nav.pug
+
+doctype html
+html(lang="en")
+head
+meta(charset='utf-8')
+title="Sleepydev"
+link(rel="stylesheet"  href="index.css"  type="text/css")
+link(rel="icon"  type="image/x-icon"  href="assets/favicon.png")
+
+body
++navWithHeader
+
+- const  sortedPosts = postData.sort((x, y) =>  new  Date(y.pubDate) - new  Date(x.pubDate))
+    ul
+        each  post  in  sortedPosts
+            li
+                a(href=`posts/${encodeURIComponent(post.title)}.html`)= post.title
+
+a(href="feed.xml"  target="_blank") 💥 Subscribe via RSS

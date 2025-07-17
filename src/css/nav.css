@@ -1,0 +1,50 @@
+/*
+ * #a349a3
+ * #ffb7ff
+ * #99e1d9
+ * #175676
+ * */
+
+.navbar {
+    background: #a349a3;
+}
+
+.navbar-nav {
+    background-color: #8F408F;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-item {
+    display: inline;
+    margin: 0 1px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #ffb7ff;
+}
+
+.dropdown-menu {
+    background-color: #8F408F;
+}
+
+.dropdown-item:hover {
+    background-color: #8F408F;
+}
+
+.navbar-icon {
+    font-size: 30px;
+    color: black;
+    padding-right: 10;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 25px;
+    background-color:#a349a3;
+}

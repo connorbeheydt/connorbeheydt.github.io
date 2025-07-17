@@ -1,0 +1,101 @@
+include ../nav.pug
+
+doctype html
+head
+  link(href='/css/styles.css' rel='stylesheet')
+
++nav('/work-experience.html')
+
+body.bg-dark
+  .container
+    h1 Work Experience
+    p 
+      i.bi.bi-briefcase.pe-1 
+      | Assistant Researcher
+    p 
+      i.bi.bi-house 
+      | Tampere, Finland
+    p 
+      i.bi.bi-envelope 
+      | connorbeheydt@gmail.com
+
+    h2 Skills 
+    p
+      ul
+        li Electrical Engineering
+        li Linux & Programming
+        li Technical Communication
+        li Microsoft Office
+      ul
+        li English
+        li Learning Finnish
+    h2 Work Experience
+    .card.pb-1
+      .card-body.bg-lightgray
+        h5.card-title #[b Research Assistant]
+        h6.card-subtitle.mb-2.text-secondary #[i.bi.bi-calendar.pe-1] 
+          | Dec 2023 - #[span.badge.rounded-pill.text-bg-primary Present]
+        p.card-text
+          | Some quick example text to build on the card title and make up the bulk of the card&rsquo;s content.
+          ul
+            li Write and maintain project codebase, timeseries database, and IoT devices  </li>
+            li Edge computing, IoT, smart meter protocols (IEC61850, DLMS-COSEM), power quality standards (IEC50160, IEC517)</li>
+            li Raspberry Pi, Docker, InfluxDB, Grafana, Linux, Python</li>
+    .card.pb-1
+      .card-body.bg-lightgray
+        h5.card-title #[b Systems Engineer]
+        h6.card-subtitle.mb-2.text-secondary 
+          | #[i.bi.bi-calendar.pe-1] May 2022 - June 2023
+        p.card-text
+          ul
+            li Rockwell and Siemens graphic interfaces and PLC programming
+            li On-site experience in several industrial plants
+            li Full project cycle experience
+    .card.pb-1
+      .card-body.bg-lightgray
+        h5.card-title #[b Tutor Manager, part time]
+        h6.card-subtitle.mb-2.text-secondary 
+          | #[i.bi.bi-calendar.pe-1] May 2021 - May 2022
+        p.card-text
+          ul
+            li Schedule tutors in multiple residence hall locations
+            li Direct Communication with and management of multiple active staff members
+            li Organization and presentation of instruction materials
+    .card.pb-1
+      .card-body.bg-lightgray
+        h5.card-title #[b Teacher Assistant, part time]
+        h6.card-subtitle.mb-2.text-secondary 
+          | #[i.bi.bi-calendar.pe-1] May 2021 - August 2021
+        p.card-text
+          ul
+            li Designed assignments and organized content for graduate courses
+            li Novel feedback control systems, MATLAB programming, LaTEX
+    h2 Education
+    .card.pb-1
+      .card-body.bg-lightgray
+        h5.card-title #[b Masters of Engineering in Smart Grids]
+        h6.card-subtitle.mb-2.text-secondary 
+          | #[i.bi.bi-calendar.pe-1] 2023 - #[span.badge.rounded-pill.text-bg-primary Present]
+        p.card-text
+          | Master degree with focus on making power grids more reslient, self-healing, and renewable
+    .card.pb-1
+      .card-body.bg-lightgray
+        h5.card-title #[b Bachelor of Science in Engineering Physics and Applied Mathematics]
+        h6.card-subtitle.mb-2.text-secondary 
+          | #[i.bi.bi-calendar.pe-1] 2018 - 2022
+        p.card-text
+          ul
+            li Control systems, digital logic, analog systems and circuits, microcontrollers
+            li Complex analysis, scientific computing, tensor calculus
+            li Intermediate mechanics, electricity and magnetism, quantum mechanics
+            li Software and comoponents, C++, Python, Java
+    .card.pb-1
+      .card-body.bg-lightgray
+        h5.card-title #[b Undergraduate Research]
+        h6.card-subtitle.mb-2.text-secondary 
+          | #[i.bi.bi-calendar.pe-1] 2022 - 2023
+        p.card-text
+          ul
+            li Si-based Resonant Interband Tunneling Diodes
+            li Silvaco semiconductor simulation software
+            li Independent self-study on semiconductor physics
