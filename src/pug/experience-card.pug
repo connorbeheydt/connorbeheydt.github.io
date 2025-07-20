@@ -1,0 +1,41 @@
+mixin work-card(title, start, end, narrative, ...skills)
+  .card.m-1
+    .card-body.bg-lightgray
+      h4.card-title 
+        b= title
+      h5.card-subtitle.mb-2.text-secondary #[i.bi.bi-calendar.pe-1] 
+        strong= start
+        |  - 
+        if end=="Present"
+          span.badge.rounded-1.px-1.text-bg-primary.text-light= end
+        else
+          strong= end
+      .row.align-items-start.p-2
+        .col
+          p.card-text= narrative
+        .col.border-start.border-primary
+          h4 Skills 
+          ul
+            each item in skills
+              li= item
+
+mixin education-card(title, start, end, narrative, ...skills)
+  .card.m-1
+    .card-body.bg-lightgray
+      h4.card-title 
+        b= title
+      h5.card-subtitle.mb-2.text-secondary #[i.bi.bi-calendar.pe-1] 
+        strong= start
+        |  - 
+        if end=="Present"
+          span.badge.rounded-1.px-1.text-bg-primary.text-light= end
+        else
+          strong= end
+      .row.align-items-start.p-2
+        .col
+          p.card-text= narrative
+        .col.border-start.border-primary
+          h4 Skills 
+          ul
+            each item in skills
+              li= item

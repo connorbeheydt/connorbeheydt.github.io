@@ -27,6 +27,12 @@ fs.readdirSync("./src/pug/pages").forEach((filePath) => {
     fs.writeFileSync(`site/${fileName}.html`, pageHtml);
 });
 
+fs.cp(`src/assets`, `site/assets`, {recursive: true}, (err) => {
+    if (err){
+        console.log(err);
+    }
+});
+
 // Nav
 
 // Homepage

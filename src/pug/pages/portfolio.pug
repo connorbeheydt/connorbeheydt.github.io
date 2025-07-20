@@ -1,4 +1,5 @@
 include ../nav.pug
+include ../portfolio-card.pug
 
 doctype html
 head
@@ -6,9 +7,77 @@ head
 
 +nav('/portfolio.html')
 
-include ../colors.pug
-
 body.bg-dark
   .container
     h1 Portfolio
+    .card.m-3.mx-5.border-2.border-dark.rounded-3.bg-lightgray
+      .card-body
+        .row.align-items-start.p-2
+          .col
+            .card-body.m-2
+              p.lead.card-text
+                | Hobby electronics, tinkerer by nature
+              a.btn.btn-primary.text-light(href='#') Download Resume
+          .col
+            img.mx-auto.d-block.border(src="/assets/images/arduino-1080213_1280.jpg" alt="profile image" loading="lazy" width=500)
+    h2 See Latest
     p Should include some little things I've worked on in the past - most likely Micro-G next, clubs, electronics workshops, and hackathons
+    .row.row-cols-1.row-cols-md-3.g-4
+      .col
+        +portfolio-card(
+          "Card Title",
+          "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. ",
+          "/assets/images/arduino-1080213_1280.jpg",
+          "#"
+        )
+      .col
+        +portfolio-card(
+          "Card Title",
+          "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. ",
+          "/assets/images/arduino-1080213_1280.jpg",
+          "#"
+        )
+      .col
+        +portfolio-card(
+          "Card Title",
+          "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. ",
+          "/assets/images/arduino-1080213_1280.jpg",
+          "#"
+        )
+      .col
+        +portfolio-card(
+          "Card Title",
+          "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. ",
+          "/assets/images/arduino-1080213_1280.jpg",
+          "#"
+        )
+      .col
+        +portfolio-card(
+          "Card Title",
+          "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. ",
+          "/assets/images/arduino-1080213_1280.jpg",
+          "#"
+        )
+      .col
+        +portfolio-card(
+          "Card Title",
+          "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. ",
+          "/assets/images/arduino-1080213_1280.jpg",
+          "#"
+        )
+    h2 All Projects
+    p Something else here
+    ul
+      li
+        a(href="#") Link 1
+      li
+        a(href="#") Link 2
+      li
+        a(href="#") Link 3
+      li
+        a(href="#") Link 4
+      li
+        a(href="#") Link 5
+      li
+        a(href="#") Link 6
+

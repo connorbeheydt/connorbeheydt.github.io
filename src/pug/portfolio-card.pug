@@ -1,0 +1,8 @@
+mixin portfolio-card(title, narrative, img_src, article_src)
+        .card.bg-lightgray
+          img.card-img-top(src=img_src alt='...', height=200)
+          .card-body
+            h5.card-title= title 
+            p.card-text= narrative
+              a.link-secondary(href= article_src)
+                | Read more

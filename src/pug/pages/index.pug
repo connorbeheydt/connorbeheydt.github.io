@@ -5,18 +5,37 @@ head
   link(href='/css/styles.css' rel='stylesheet')
 
 +nav('/')
-
 body.bg-dark
+  .hero.g-0.bg-light.py-5
+    .row.align-items-start.p-2
+      .col
+        img.rounded-circle.mx-auto.d-block.border(src="/assets/images/profile-pic-md.png" alt="profile image" loading="lazy")
+      .col.align-self-center
+        .card.w-50.bg-lightgray
+          .card-body
+            h2.card-title Hei, I'm Connor
+            p.lead.card-text
+              | Some quick example text to build on the card title and make up the bulk of the card&rsquo;s content.
+            a.btn.btn-primary.text-light(href='/contact-me.html') Contact Me
   .container
-    // Card carousel with some things about me
-    h1 Under construction...
-    p Working on displaying some personal work content like resumes and such
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pulvinar ex eget neque sodales, vel varius velit facilisis. Proin vel mattis sapien. Nam eu fermentum arcu, at dapibus magna. Integer efficitur lorem vitae nisi venenatis, et viverra tortor ultricies. Fusce tincidunt elit eget enim sagittis, a porttitor turpis varius. Morbi ut velit tincidunt tellus luctus elementum sit amet ac diam. Aenean rutrum lorem enim, eu imperdiet mauris dictum sed. Ut accumsan egestas placerat. Nulla facilisi. Sed nec vulputate magna. Integer nec odio euismod, tempus leo id, convallis ante. Phasellus dictum neque urna, nec ullamcorper neque luctus vitae. Vivamus lobortis urna eget mattis finibus. Cras faucibus dolor eget enim tempor, id tristique odio porta.
-
-    p Maecenas ac leo vitae ante posuere consequat ut ut neque. Nulla facilisi. Ut feugiat erat lacus, sit amet mollis ante faucibus nec. Suspendisse at purus lobortis, sagittis mi eu, ultrices ligula. Aliquam non orci sapien. Curabitur mi justo, scelerisque a egestas in, convallis sit amet erat. Duis aliquet mauris eget nisi tincidunt, a lacinia tellus fermentum. Aliquam erat volutpat. Ut ac nibh ipsum. Quisque tristique convallis venenatis. Curabitur tincidunt purus a tellus varius auctor. Praesent ac augue dui. Pellentesque at mauris mauris. Integer iaculis suscipit erat, sed congue enim sodales ut.
-
-    p Proin enim mauris, sollicitudin eget elementum quis, interdum ut justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras lacinia sapien sit amet fermentum dictum. Integer sed suscipit nibh. Vivamus egestas augue eu risus eleifend imperdiet. Vestibulum ultricies ante ac est placerat, ac congue orci sagittis. Etiam sit amet metus molestie, efficitur purus non, accumsan quam. Nam dictum lorem et eleifend interdum. Curabitur a turpis non arcu viverra laoreet quis vehicula ex. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis nunc at tortor condimentum, quis commodo nunc dictum. Ut et diam suscipit, malesuada lorem ut, commodo ante.
-
-    p Nam ut nibh eu arcu mollis lobortis. Donec risus lacus, malesuada ut purus id, fringilla dignissim lorem. Sed at tellus placerat, venenatis tellus eget, venenatis justo. Proin euismod massa libero, quis aliquam sapien vehicula nec. In interdum, lacus eu varius ornare, diam leo malesuada dolor, in ornare lectus sapien vel nisi. In dignissim nisi id posuere iaculis. Cras id gravida mauris. Nam sit amet congue elit, sed ornare purus. Proin ultrices est nec sem facilisis consequat. Proin et accumsan nibh, eu fermentum odio.
-
-    p Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam aliquam eget ante et congue. Integer sed urna sed sapien commodo egestas id consequat tellus. Nulla bibendum porta turpis. Nulla vel suscipit nunc. Pellentesque ornare justo vel tristique interdum. Nulla ultricies pharetra neque vitae mollis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis interdum diam quis porta tincidunt. Etiam sed dolor vel neque laoreet cursus. Donec commodo, metus et aliquet fermentum, tellus nulla pellentesque erat, ut accumsan sapien justo interdum metus. Maecenas risus magna, facilisis id consequat ut, egestas sit amet velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. 
+    .row.align-items-center.p-2
+      .col.p-4
+        .card.bg-lightgray
+          .card-body.m-2
+            h2.card-title Experience
+            p.lead.card-text
+              | Some quick example text to build on the card title and make up the bulk of the card&rsquo;s content.
+            .ul
+              .li.pb-2
+                a.btn.btn-primary.text-light(href='/work-experience.html') See Experience
+              .li.pb-2
+                a.btn.btn-primary.text-light(href='#') Download Resume
+      .col.p-4
+        .card.bg-lightgray
+          .card-body.m-2
+            h2.card-title Portfolio
+            p.lead.card-text
+              | Some quick example text to build on the card title and make up the bulk of the card&rsquo;s content.
+            a.btn.btn-primary.text-light(href='/portfolio.html') See Portfolio
+      h1 Some more text
+      p Some more text perhaps? Could be huge.
