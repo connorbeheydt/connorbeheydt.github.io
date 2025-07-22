@@ -8,7 +8,8 @@ Making a personal website using a static site generator. It'll hold resume-like 
   - [ ] Portfolio narrative
   - [ ] Portolio articles
   - [ ] Portfolio Generation
-- [ ] New Colors
+  - [ ] Copyright footer?
+- [X] New Colors
 - [X] Digital Wireframe new website design
   - [X] Contact Me
   - [X] Portfolio
