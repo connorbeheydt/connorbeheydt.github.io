@@ -26,8 +26,6 @@ $bootstrap-icons-font-dir: "../../node_modules/bootstrap-icons/font/fonts";
 $enable-gradients: true;
 $enable-shadows: true;
 
-$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
-
 // Include functions first
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
@@ -59,14 +57,41 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 //  "lightgray":  $light-graphite
 //);
 
-// Theme 2
+//// Theme 2
+//$darkgray: #3b3c40;
+//$navy: #023059;
+//$dark: #010d00;
+//$darkgreen: #234001;
+//$green: #67730a;
+//$graphite: #594d5b; 
+//$light-graphite: #8b828c;
+//$theme-colors: (
+//  "primary":    $green,
+//  "secondary":  $darkgreen,
+//  "tertiary":   $navy,
+//  "success":    $success,
+//  "info":       $info,
+//  "warning":    $warning,
+//  "danger":     $danger,
+//  "light":      $light,
+//  "dark":       $dark,
+//  "gray":       $graphite,
+//  "lightgray":  $light-graphite
+//);
+
+// Theme 3
 $darkgray: #3b3c40;
 $navy: #023059;
+$dark-navy: shade-color($navy, 20%);
+//$light-bluegray: shade-color(#bacbd9, 20%);
+$light-bluegray: #bacbd9;
+$light-blue: #79c4f2;
 $dark: #010d00;
-$darkgreen: #234001;
-$green: #67730a;
+$darkgreen: #49590f;
+$green: #7f8c1f;
 $graphite: #594d5b; 
 $light-graphite: #8b828c;
+$light: #f2f2f2;
 
 $theme-colors: (
   "primary":    $green,
@@ -79,29 +104,38 @@ $theme-colors: (
   "light":      $light,
   "dark":       $dark,
   "gray":       $graphite,
-  "lightgray":  $light-graphite
+  "lightgray":  $light-graphite,
+  "lightblue": $light-blue,
+  "lightbluegray": $light-bluegray,
+  "darknavy": $dark-navy
 );
 
 
-// Card colors
+// Card CSS
+$card-height: 100%;
+$card-bg-color: $light-bluegray;
+$card-title-color: $light-blue;
+$card-subtitle-color: $light-bluegray;
+$card-bg: $dark-navy;
+$card-border-color: $light-bluegray;
+$card-border-width: 1.5px;
   // Homepage Cards
   // Contact Card
   // Experience Card
   // Portfolio Cards
 
 // Icon colors
-// Body colors
-$body-color: #000;
-$body-bg: #000;
 
+// Body colors
+$body-color: $light;
+$body-bg: $darkgray;
 
 // Update theme colors with custom theming 
 $theme-colors: map-merge($theme-colors, $theme-colors);
 
 $primary: $green;
 $border-radius: .4rem;
-$card-color: #fff;
-$card-height: 100%; // All card heights equal
+$border-color: $light-bluegray;
 /*
 Orange monocromatic colorscheme
 
@@ -188,7 +222,7 @@ h1 {
     flex-direction: column;
     min-height: 100vh; /* Ensures full viewport height */
     padding-bottom: 0px; /* Creates enough space for news content */
-    background-color: white;
+    width: 60%;
 }
 
 //
@@ -234,7 +268,7 @@ h1 {
 
 .navbar-icon {
     font-size: 30px;
-    color: black;
+    color: $light-bluegray;
     padding-right: 10;
 }
 

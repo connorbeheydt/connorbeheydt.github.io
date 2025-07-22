@@ -7,25 +7,26 @@ head
 
 +nav('/work-experience.html')
 
-body.bg-dark
+body
   .container
     h1 Experience
-    .row.align-items-start.p-5.mb-5.mx-5.bg-secondary.rounded-2
-      .col 
-        img.rounded-1.mx-auto.d-block.border(src="/assets/images/profile-pic-sm.png" alt="profile image" loading="lazy")
-      .col.text-light.fs-3
-        p Finishing up my master's degree. 
-        a.btn.btn-primary.text-light(href='#') Download Resume
-    .row.align-items-start.p-2
-      .col.border
-        i.bi.bi-briefcase.pe-1 
-        | Assistant Researcher
-      .col.border
-        i.bi.bi-house 
-        | Tampere, Finland
-      .col.border
-        i.bi.bi-envelope 
-        | connorbeheydt@gmail.com
+    .border.pt-5.mb-5.mx-2.bg-darknavy.rounded-2
+      .row.align-items-start
+        .col 
+          img.rounded-1.mx-auto.d-block.border(src="/assets/images/profile-pic-sm.png" alt="profile image" loading="lazy")
+        .col.text-light.fs-3
+          p Finishing up my master's degree. 
+          a.btn.btn-primary.text-light(href='#') Download Resume
+      .row.align-items-start.p-1.ms-2.mt-4
+        .col.fs-6
+          i.bi.bi-briefcase-fill.pe-1 
+          | Assistant Researcher
+        .col.fs-6
+          i.bi.bi-house-fill 
+          | Tampere, Finland
+        .col.fs-6
+          i.bi.bi-envelope-fill 
+          | connorbeheydt@gmail.com
 
     h2 Work Experience
     +work-card(

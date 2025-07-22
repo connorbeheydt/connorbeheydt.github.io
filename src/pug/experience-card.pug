@@ -1,6 +1,6 @@
 mixin work-card(title, start, end, narrative, ...skills)
   .card.m-1
-    .card-body.bg-lightgray
+    .card-body
       h4.card-title 
         b= title
       h5.card-subtitle.mb-2.text-secondary #[i.bi.bi-calendar.pe-1] 
@@ -21,7 +21,7 @@ mixin work-card(title, start, end, narrative, ...skills)
 
 mixin education-card(title, start, end, narrative, ...skills)
   .card.m-1
-    .card-body.bg-lightgray
+    .card-body
       h4.card-title 
         b= title
       h5.card-subtitle.mb-2.text-secondary #[i.bi.bi-calendar.pe-1] 
