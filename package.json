@@ -1,0 +1,39 @@
+{
+    "name": "pug_test",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "build": "npm run css",
+        "css-compile": "sass --style compressed --source-map --embed-sources --no-error-css --load-path=node_modules src/scss/:site/css/",
+        "css-lint": "stylelint scss/",
+        "css-prefix": "postcss --replace site/css/styles.css --use autoprefixer --map",
+        "css": "npm-run-all css-compile css-prefix",
+        "server": "sirv ./site --dev --no-clear --port 3000",
+        "start": "cp -r ./node_modules ./site/node_modules/ && npm-run-all --parallel watch update-pug server",
+        "update-pug": "nodemon -e pug,md -x \"node index.js\"",
+        "watch": "nodemon -e html,scss -x \"npm run css\"",
+        "test": "npm-run-all css-lint css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "dependencies": {
+        "autoprefixer": "^10.4.21",
+        "bootstrap": "^5.3.7",
+        "bootstrap-icons": "^1.13.1",
+        "cheerio": "^1.1.2",
+        "http-server": "^14.1.1",
+        "jstransformer-markdown-it": "^3.0.0",
+        "marked": "^16.0.0",
+        "nodemon": "^3.1.10",
+        "npm-run-all": "^4.1.5",
+        "postcss": "^8.5.6",
+        "postcss-cli": "^11.0.1",
+        "pug": "^3.0.3",
+        "sass": "^1.89.2",
+        "showdown": "^2.1.0",
+        "sirv-cli": "^3.0.1",
+        "stylelint": "^16.21.1"
+    }
+}

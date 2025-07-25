@@ -1,0 +1,35 @@
+include ../nav.pug
+include ../copyright-footer.pug
+
+doctype html
+head
+  link(href='/css/styles.css' rel='stylesheet')
+
++nav('/contact-me.html')
+
+body(style="margin: 0; height:100%; overflow: hidden; background-image: url('/assets/images/finland-905724.jpg');")
+  .position-relative
+    .card.m-3.mx-5.border-2.rounded-3
+      .card-body
+        .row.align-items-start.p-2
+          .col.border-end.border-primary
+            img.rounded-circle.mx-auto.d-block.border(src="/assets/images/profile-pic-md.png" alt="profile image" loading="lazy")
+          .col
+            h4.card-title 
+              b Connor Beheydt
+            h5.card-subtitle.mb-2.text-secondary
+              strong Assistant Researcher 
+            ul(style="list-style-type: none;")
+              li
+                i.bi.bi-envelope-at-fill.navbar-icon
+                | 
+                a.pe-1(href='https://www.linkedin.com/in/connor-beheydt/' target='_blank') connorbeheydt@gmail.com
+              li
+                i.bi.bi-linkedin.navbar-icon
+                | 
+                a.pe-1(href='https://www.linkedin.com/in/connor-beheydt/' target='_blank') Linkedin
+              li
+                i.bi.bi-github.navbar-icon
+                | 
+                a.pe-1(href='https://github.com/connorbeheydt' target='_blank')  Github
+  +copyright-footer

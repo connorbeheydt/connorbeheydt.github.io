@@ -1,0 +1,30 @@
+//nav.pug
+mixin nav(currentUrl)
+  nav#navbar.navbar.navbar-expand-lg.fixed-top.bg-tertiary
+    .container-fluid
+      button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      a.navbar-brand.badge(href='/')
+        |  Connor Beheydt
+      #navbarNav.collapse.navbar-collapse
+        ul.navbar-nav.nav-pills.me-auto.mb-2.mb-lg-0.rounded.bg-secondary
+          li.nav-item
+            a#link_index.nav-link(class={active: currentUrl === '/' } href='/') Homepage
+          li.nav-item
+            a#link_work-experience.nav-link(class={active: currentUrl === '/work-experience.html'} href='/work-experience.html') Work Experience
+          li.nav-item
+            a#link_portfolio.nav-link(class={active: currentUrl === '/portfolio.html'} href='/portfolio.html') Portfolio
+          li.nav-item
+            a#link_contact-me.nav-link(class={active: currentUrl === '/contact-me.html'} href='/contact-me.html') Contact Me
+        .d-flex.justify-content-end
+          a.pe-1(href='https://www.linkedin.com/in/connor-beheydt/' target='_blank')
+            i.bi.bi-linkedin.navbar-icon
+          a.pe-1(href='https://github.com/connorbeheydt' target='_blank')
+            i.bi.bi-github.navbar-icon
+//-          li.nav-item.dropdown
+//-            a.nav-link.dropdown-toggle(class={active: currentUrl === '#'} href='#' data-bs-toggle='dropdown' aria-expanded='false') Blog
+//-            ul.dropdown-menu
+//-              li
+//-                a#link_Fuksi-en.dropdown-item.nav-link(class={active: currentUrl === '/pages/Fuksi-en.html'} href='/pages/Fuksi-en.html') Blog1
+//-              li
+//-                a#link_Membership-en.dropdown-item.nav-link(class={active: currentUrl === '/pages/Membership-en.html'} href='/pages/Membership-en.html') Blog2

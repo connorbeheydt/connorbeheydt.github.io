@@ -1,0 +1,41 @@
+include ../nav.pug
+include ../copyright-footer.pug
+
+doctype html
+head
+  link(href='/css/styles.css' rel='stylesheet')
+
++nav('/')
+body
+  .hero.g-0.bg-light.py-5
+    .row.align-items-start.p-2
+      .col
+        img.rounded-circle.mx-auto.d-block.border(src="/assets/images/profile-pic-md.png" alt="profile image" loading="lazy")
+      .col.align-self-center
+        .card.w-50
+          .card-body
+            h2.card-title Hei, I'm Connor
+            p.lead.card-text
+              | Researcher, engineer, lifelong tinkerer.
+            a.btn.btn-primary.text-light(href='/contact-me.html') Contact Me
+  .container
+    .row.align-items-center.p-2
+      .col.p-4.align-items-stretch
+        .card
+          .card-body.m-2
+            h2.card-title Experience
+            p.lead.card-text
+              | See my work experience in a digital format or download my resume.
+            .ul
+              .li.pb-2
+                a.btn.btn-primary.text-light(href='/work-experience.html') See Experience
+              .li.pb-2
+                a.btn.btn-primary.text-light(href='/assets/pdfs/resume.pdf' download) Download Resume
+      .col.p-4.align-items-stretch
+        .card
+          .card-body.m-2
+            h2.card-title Portfolio
+            p.lead.card-text
+              | See my personal projects and other activities.
+            a.btn.btn-primary.text-light(href='/portfolio.html') See Portfolio
+  +copyright-footer

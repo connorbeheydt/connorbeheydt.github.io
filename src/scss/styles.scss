@@ -1,0 +1,340 @@
+// Override Bootstrap's Sass default variables
+//
+// Nearly all variables in Bootstrap are written with the `!default` flag.
+// This allows you to override the default values of those variables before
+// you import Bootstrap's source Sass files.
+//
+// Overriding the default variable values is the best way to customize your
+// CSS without writing _new_ styles. For example, you can either change
+// `$body-color` or write more CSS that override's Bootstrap's CSS like so:
+// `body { color: red; }`.
+
+
+//
+// Bring in Bootstrap
+//
+
+
+// Option 2
+//
+// Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
+
+// Bootstrap Icons
+$bootstrap-icons-font-dir: "../../node_modules/bootstrap-icons/font/fonts";
+
+// Toggle global options
+$enable-gradients: true;
+$enable-shadows: true;
+
+// Include functions first
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+// Customize some defaults
+
+
+//// Theme 1 
+//$orange: #f58f00;
+//$orangebrown: #c28127;
+//$brown: #8f6b39;
+//$darkbrown: #5c4c37;
+//$dark: #332f29;
+//$graphite: #594d5b; 
+//$light-graphite: #8b828c;
+//
+//$theme-colors: (
+//  "primary":    $orange,
+//  "secondary":  $orangebrown,
+//  "tertiary":   $brown,
+//  "success":    $success,
+//  "info":       $info,
+//  "warning":    $warning,
+//  "danger":     $danger,
+//  "light":      $light,
+//  "dark":       $graphite,
+//  "gray":       $graphite,
+//  "lightgray":  $light-graphite
+//);
+
+//// Theme 2
+//$darkgray: #3b3c40;
+//$navy: #023059;
+//$dark: #010d00;
+//$darkgreen: #234001;
+//$green: #67730a;
+//$graphite: #594d5b; 
+//$light-graphite: #8b828c;
+//$theme-colors: (
+//  "primary":    $green,
+//  "secondary":  $darkgreen,
+//  "tertiary":   $navy,
+//  "success":    $success,
+//  "info":       $info,
+//  "warning":    $warning,
+//  "danger":     $danger,
+//  "light":      $light,
+//  "dark":       $dark,
+//  "gray":       $graphite,
+//  "lightgray":  $light-graphite
+//);
+
+// Theme 3
+$darkgray: #3b3c40;
+$navy: #023059;
+$dark-navy: shade-color($navy, 20%);
+//$light-bluegray: shade-color(#bacbd9, 20%);
+$light-bluegray: #bacbd9;
+$light-blue: #79c4f2;
+$dark: #010d00;
+$darkgreen: #49590f;
+$green: #7f8c1f;
+$graphite: #594d5b; 
+$light-graphite: #8b828c;
+$light: #f2f2f2;
+
+$theme-colors: (
+  "primary":    $green,
+  "secondary":  $darkgreen,
+  "tertiary":   $navy,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "gray":       $graphite,
+  "lightgray":  $light-graphite,
+  "lightblue": $light-blue,
+  "lightbluegray": $light-bluegray,
+  "darknavy": $dark-navy
+);
+
+
+// Card CSS
+$card-height: 100%;
+$card-bg-color: $light-bluegray;
+$card-title-color: $light-blue;
+$card-subtitle-color: $light-bluegray;
+$card-bg: $dark-navy;
+$card-border-color: $light-bluegray;
+$card-border-width: 1.5px;
+  // Homepage Cards
+  // Contact Card
+  // Experience Card
+  // Portfolio Cards
+
+// Icon colors
+
+// Body colors
+$body-color: $light;
+$body-bg: $darkgray;
+
+// Update theme colors with custom theming 
+$theme-colors: map-merge($theme-colors, $theme-colors);
+
+$primary: $green;
+$border-radius: .4rem;
+$border-color: $light-bluegray;
+/*
+Orange monocromatic colorscheme
+
+ */
+
+/*
+ * #a349a3
+ * #ffb7ff
+ * #99e1d9
+ * #175676
+ * */
+
+// Required
+// Include Variables
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+
+@import "bootstrap/scss/type";
+// @import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+// @import "bootstrap/scss/tables";
+// @import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/card";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/accordion";
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+// @import "bootstrap/scss/modal"; // Requires transitions
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/spinners";
+// @import "bootstrap/scss/offcanvas"; // Requires transitions
+// @import "bootstrap/scss/placeholders";
+
+// Helpers
+@import "bootstrap/scss/helpers";
+
+// Utilities
+@import "bootstrap/scss/utilities/api";
+
+// Icon Font
+@import "bootstrap-icons/font/bootstrap-icons";
+
+//
+// Custom styles
+//
+
+@import "icon-list";
+
+/* Basic CSS styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding-top: 65px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full viewport height */
+    padding-bottom: 0px; /* Creates enough space for news content */
+    width: 65%;
+}
+
+//
+// Nav
+//
+/*
+ * #a349a3
+ * #ffb7ff
+ * #99e1d9
+ * #175676
+ * */
+
+//.navbar {
+//    background: #a349a3;
+//}
+
+.navbar-nav {
+    list-style: none;
+    text-align: center;
+}
+
+.nav-item {
+    display: inline;
+    margin: 0 1px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-pills .nav-link.active {
+    background-color: $primary;
+    color: $light;
+}
+
+.nav-pills .nav-link:hover {
+  color: $primary;
+}
+
+.dropdown-menu {
+    background-color: #8F408F;
+}
+
+.dropdown-item:hover {
+    background-color: #8F408F;
+}
+
+.navbar-icon {
+    font-size: 30px;
+    color: $light-bluegray;
+    padding-right: 10;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 25px;
+}
+
+.navbar-brand:hover {
+  color: $primary;
+}
+
+@each $color, $value in $theme-colors {
+  .swatch-#{$color} {
+    color: color-contrast($value);
+  }
+}
+
+.hero {
+  background-image: url("/assets/images/finland-905724.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* To get post pictures working. Might need to swap this out in the future for something more specific */
+p img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+blockquote {
+  background: $light-graphite;
+  border-left: 10px solid $light-bluegray;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+// Text Crop utils (for cards mostly)
+.crop-text-1 {
+  -webkit-line-clamp: 1;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.crop-text-2 {
+  -webkit-line-clamp: 2;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.copyright {
+  color: gray;
+  font-size: 12px;
+  padding-inline-start: 20px;
+}

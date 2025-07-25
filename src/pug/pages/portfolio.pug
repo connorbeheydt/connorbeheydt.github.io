@@ -1,0 +1,49 @@
+include ../nav.pug
+include ../portfolio-card.pug
+include ../copyright-footer.pug
+
+doctype html
+head
+  link(href='/css/styles.css' rel='stylesheet')
+
++nav('/portfolio.html')
+
+body
+  .container
+    h1 Portfolio
+    .card.m-3.mx-2.border-2.border.rounded-3
+      .card-body
+        .row.align-items-start.p-2
+          .col
+            .card-body.m-2
+              p.lead.card-text
+                | Beyond my work experience I follow my passion for hobby electronics and software tinkering by pursuing personal projects, participating in Hackathons, and hosting workshops on electronics.
+              a.btn.btn-primary.text-light(href='/assets/pdfs/resume.pdf' download) Download Resume
+          .col
+            img.mx-auto.d-block.border(src="/assets/images/projpic6-3.jpg" alt="profile image" loading="lazy" width=500)
+    h2.mt-2 See Latest
+    p Should include some little things I've worked on in the past - most likely Micro-G next, clubs, electronics workshops, and hackathons
+    .row.row-cols-1.row-cols-md-3.g-4
+      each val, key in data
+        .col
+          +portfolio-card(
+            key,
+            val.description,
+            val.image_src,
+            val.link
+          )
+    h2.mt-2 All Projects
+    ul
+      li
+        a(href="/portfolio-posts/plughub.html") Plughub
+      li
+        a(href="/portfolio-posts/simple-led-array.html") Simple LED Array
+      li
+        a(href="/portfolio-posts/digital-dice-roller.html") Digital Dice Roller
+      li
+        a(href="/portfolio-posts/location-board.html") Location Board
+      li
+        a(href="/portfolio-posts/neopixel-array.html") Neopixel Array
+      li
+        a(href="/portfolio-posts/nasa-microg-next.html") NASA MicroG Next
+  +copyright-footer

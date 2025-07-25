@@ -1,0 +1,10 @@
+mixin portfolio-card(title, narrative, img_src, article_src)
+  .card
+    a(href=article_src, style="text-decoration: none;")
+      img.card-img-top(src=img_src alt='...', height=200)
+    .card-body
+      a(href=article_src, style="text-decoration: none;")
+        h5.card-title.text-truncate= title 
+      p.card-text.crop-text-2.mb-0(style="max-height: 100;")= narrative
+      a.card-text.link-secondary.mt-0(href= article_src)
+        | Read more
