@@ -215,6 +215,8 @@ body {
 
 h1 {
     text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .container {
@@ -222,7 +224,7 @@ h1 {
     flex-direction: column;
     min-height: 100vh; /* Ensures full viewport height */
     padding-bottom: 0px; /* Creates enough space for news content */
-    width: 60%;
+    width: 65%;
 }
 
 //
@@ -256,6 +258,11 @@ h1 {
 
 .nav-pills .nav-link.active {
     background-color: $primary;
+    color: $light;
+}
+
+.nav-pills .nav-link:hover {
+  color: $primary;
 }
 
 .dropdown-menu {
@@ -277,6 +284,10 @@ h1 {
     font-size: 25px;
 }
 
+.navbar-brand:hover {
+  color: $primary;
+}
+
 @each $color, $value in $theme-colors {
   .swatch-#{$color} {
     color: color-contrast($value);
@@ -288,4 +299,42 @@ h1 {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+/* To get post pictures working. Might need to swap this out in the future for something more specific */
+p img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+blockquote {
+  background: $light-graphite;
+  border-left: 10px solid $light-bluegray;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+// Text Crop utils (for cards mostly)
+.crop-text-1 {
+  -webkit-line-clamp: 1;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.crop-text-2 {
+  -webkit-line-clamp: 2;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.copyright {
+  color: gray;
+  font-size: 12px;
+  padding-inline-start: 20px;
 }

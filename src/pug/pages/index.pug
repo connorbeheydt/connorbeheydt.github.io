@@ -1,4 +1,5 @@
 include ../nav.pug
+include ../copyright-footer.pug
 
 doctype html
 head
@@ -15,27 +16,26 @@ body
           .card-body
             h2.card-title Hei, I'm Connor
             p.lead.card-text
-              | Some quick example text to build on the card title and make up the bulk of the card&rsquo;s content.
+              | Researcher, engineer, lifelong tinkerer.
             a.btn.btn-primary.text-light(href='/contact-me.html') Contact Me
   .container
     .row.align-items-center.p-2
-      .col.p-4
+      .col.p-4.align-items-stretch
         .card
           .card-body.m-2
             h2.card-title Experience
             p.lead.card-text
-              | Some quick example text to build on the card title and make up the bulk of the card&rsquo;s content.
+              | See my work experience in a digital format or download my resume.
             .ul
               .li.pb-2
                 a.btn.btn-primary.text-light(href='/work-experience.html') See Experience
               .li.pb-2
-                a.btn.btn-primary.text-light(href='#') Download Resume
-      .col.p-4
+                a.btn.btn-primary.text-light(href='/assets/pdfs/resume.pdf' download) Download Resume
+      .col.p-4.align-items-stretch
         .card
           .card-body.m-2
             h2.card-title Portfolio
             p.lead.card-text
-              | Some quick example text to build on the card title and make up the bulk of the card&rsquo;s content.
+              | See my personal projects and other activities.
             a.btn.btn-primary.text-light(href='/portfolio.html') See Portfolio
-      h1 Some more text
-      p Some more text perhaps? Could be huge.
+  +copyright-footer

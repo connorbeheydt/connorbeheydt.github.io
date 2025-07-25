@@ -1,0 +1,15 @@
+include ./nav.pug
+include ./copyright-footer.pug
+
+doctype html
+html(lang="en")
+head
+  title Connor Beheydt
+  link(href='/css/styles.css' rel='stylesheet')
+  
++nav('/portfolio.html')
+
+body
+  .container
+    | !{postHtml}
+  +copyright-footer

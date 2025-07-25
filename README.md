@@ -2,13 +2,16 @@
 Making a personal website using a static site generator. It'll hold resume-like content as well as a maker blog.
 
 ### TODO
-- [ ] Fill in content
-  - [ ] Homepage
-  - [ ] Experience narrative
-  - [ ] Portfolio narrative
-  - [ ] Portolio articles
-  - [ ] Portfolio Generation
-  - [ ] Copyright footer?
+- [ ] Resume
+- [ ] Fix nav dropdown
+- [X] Resume download link
+- [X] Fill in content
+  - [X] Copyright footer?
+  - [X] Homepage
+  - [X] Experience narrative
+  - [X] Portfolio narrative
+  - [X] Portfolio Generation
+  - [X] Portolio articles
 - [X] New Colors
 - [X] Digital Wireframe new website design
   - [X] Contact Me

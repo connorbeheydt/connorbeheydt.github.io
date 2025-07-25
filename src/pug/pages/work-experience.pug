@@ -1,5 +1,6 @@
 include ../nav.pug
 include ../experience-card.pug
+include ../copyright-footer.pug
 
 doctype html
 head
@@ -10,38 +11,39 @@ head
 body
   .container
     h1 Experience
-    .border.pt-5.mb-5.mx-2.bg-darknavy.rounded-2
+    .border.pt-5.mb-5.bg-darknavy.rounded-2
       .row.align-items-start
         .col 
           img.rounded-1.mx-auto.d-block.border(src="/assets/images/profile-pic-sm.png" alt="profile image" loading="lazy")
         .col.text-light.fs-3
-          p Finishing up my master's degree. 
-          a.btn.btn-primary.text-light(href='#') Download Resume
-      .row.align-items-start.p-1.ms-2.mt-4
+          p Assistant researcher with industry experience finishing Master's Degree in Smart Grids.
+          a.btn.btn-primary.text-light(href='/assets/pdfs/resume.pdf' download) Download Resume
+      .row.align-items-start.p-1.ms-2.mt-4.mx-0
         .col.fs-6
           i.bi.bi-briefcase-fill.pe-1 
           | Assistant Researcher
         .col.fs-6
-          i.bi.bi-house-fill 
+          i.bi.bi-house-fill.pe-1
           | Tampere, Finland
         .col.fs-6
-          i.bi.bi-envelope-fill 
+          i.bi.bi-envelope-fill.pe-1
           | connorbeheydt@gmail.com
 
-    h2 Work Experience
+    h2.py-2 Work Experience
     +work-card(
       "Research Assistant", 
       "Dec 2023", 
       "Present", 
-      "Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "Research on edge computing and IT solutions for Smart Grid applications.",
       "Write and maintain project codebase, timeseries database, and IoT devices",
       "Edge computing, IoT, smart meter protocols (IEC61850, DLMS-COSEM), power quality standards (IEC50160, IEC517)",
-      "Raspberry Pi, Docker, InfluxDB, Grafana, Linux, Python"
+      "Raspberry Pi, Docker, InfluxDB, Grafana, Linux, Python, C, MCU programming"
       )
     +work-card(
       "Systems Engineer",
       "May 2022",
       "June 2023",
+      "Industrial systems engineering contractor. Worked several large projects for industrial clients.",
       "Rockwell and Siemens graphic interfaces and PLC programming",
       "On-site experience in several industrial plants",
       "Full project cycle experience"
@@ -50,31 +52,35 @@ body
       "Tutor Manager, part time",
       "May 2021",
       "May 2022",
+      "Manager for student tutor on campus. I worked as a tutor myself in 2020.",
       "Schedule tutors in multiple residence hall locations",
       "Direct Communication with and management of multiple active staff members",
+      "Participation in hiring activities for employees",
       "Organization and presentation of instruction materials"
     )
     +work-card(
       "Teacher Assistant, part time",
       "May 2021",
       "August 2021",
+      "Summer job working for one of my professors at university. First time trying to re-implement content from research papers.",
       "Designed assignments and organized content for graduate courses",
       "Novel feedback control systems, MATLAB programming, LaTEX"
     )
     
-    h2 Education
+    h2.py-2 Education
     +education-card(
       "Masters of Engineering in Smart Grids, Tampere University",
       "2023",
       "Present",
       "Master degree with focus on making power grids more reslient, self-healing, and renewable",
-      "Stuff"
+      "Electrical engineering, grid automation, solar and wind energy",
+      "Distributed energy resources, electrical motor control, power quality"
     )
     +education-card(
       "Bachelor of Science in Engineering Physics and Applied Mathematics, The Ohio State University",
       "2018",
       "2022",
-      "Double major in engineering physics and applied mathematics",
+      "Double major in engineering physics and applied mathematics. I'm glad I got the opportunity to study general relativity and quantum mechanics while working on signals and systems and digital logic.",
       "Control systems, digital logic, analog systems and circuits, microcontrollers",
       "Complex analysis, scientific computing, tensor calculus",
       "Intermediate mechanics, electricity and magnetism, quantum mechanics",
@@ -89,6 +95,7 @@ body
       "Silvaco semiconductor simulation software",
       "Independent self-study on semiconductor physics"
     )
+  +copyright-footer
 //-    h2 Skills 
 //-    p
 //-      ul

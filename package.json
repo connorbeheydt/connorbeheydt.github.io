@@ -10,7 +10,7 @@
         "css": "npm-run-all css-compile css-prefix",
         "server": "sirv ./site --dev --no-clear --port 3000",
         "start": "cp -r ./node_modules ./site/node_modules/ && npm-run-all --parallel watch update-pug server",
-        "update-pug": "nodemon -e pug -x \"node index.js\"",
+        "update-pug": "nodemon -e pug,md -x \"node index.js\"",
         "watch": "nodemon -e html,scss -x \"npm run css\"",
         "test": "npm-run-all css-lint css"
     },
@@ -22,6 +22,7 @@
         "autoprefixer": "^10.4.21",
         "bootstrap": "^5.3.7",
         "bootstrap-icons": "^1.13.1",
+        "cheerio": "^1.1.2",
         "http-server": "^14.1.1",
         "jstransformer-markdown-it": "^3.0.0",
         "marked": "^16.0.0",
