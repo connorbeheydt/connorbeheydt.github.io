@@ -1,9 +1,11 @@
 ## Personal Website
-Making a personal website using a static site generator. It'll hold resume-like content as well as a maker blog.
+Personal website using a static site generator for holding resume-like content and portfolio
 
 ### TODO
-- [ ] Resume
 - [ ] Fix nav dropdown
+- [ ] Fix bootstrap icons
+- [ ] Optimize for mobile
+- [X] Resume
 - [X] Resume download link
 - [X] Fill in content
   - [X] Copyright footer?
