@@ -2,9 +2,9 @@
 Personal website using a static site generator for holding resume-like content and portfolio
 
 ### TODO
-- [ ] Fix nav dropdown
 - [ ] Fix bootstrap icons
 - [ ] Optimize for mobile
+- [X] Fix nav dropdown
 - [X] Resume
 - [X] Resume download link
 - [X] Fill in content
