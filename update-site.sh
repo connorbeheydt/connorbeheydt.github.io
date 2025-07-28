@@ -1,7 +1,13 @@
 #!/bin/bash
 cp -r ./site ../
-cp .nojekyll ../site
 git checkout gh-pages
-cp -r ../site ./
-rm -r ../site
-git add .
+if [ $? -eq 0 ]; then
+    echo Checkout success.
+    rm -r ./*
+    cp -r ../site/* ./
+    rm -r ../site
+    touch .nojekyll
+    git add .
+else
+    echo Checkout failed.
+fi
